@@ -26,13 +26,26 @@
 ================================================================
 */
 
+// =====================================================
+// CONFIGURAÇÃO DO SUPABASE
+// =====================================================
+// URL do projeto Supabase
+// Substitua pelo endereço do seu projeto.
+const SUPABASE_URL = "https://irmvmyajulxvfjygqugs.supabase.co";
 
+// Chave pública do projeto
+// Utilize somente a chave pública destinada ao cliente.
+// NÃO coloque aqui a Service Role Key.
+const SUPABASE_ANON_KEY = "sb_publishable_VVZk7f6NnYKKFkOJSIZj4A_0igqlC9e";
+
+// Cria a conexão com o Supabase
+const supabaseClient = supabase.createClient(
+SUPABASE_URL,
+SUPABASE_ANON_KEY
+);
 // ================================================================
 // CONFIGURAÇÕES
 // ================================================================
-
-// Nome utilizado para identificar os dados no localStorage.
-const CHAVE_STORAGE = "biblioteca_aulasql_simples_v1";
 
 // Indica se o banco já foi criado.
 let bancoInicializado = false;
