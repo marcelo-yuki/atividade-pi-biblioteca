@@ -46,7 +46,7 @@ SUPABASE_ANON_KEY
 // ================================================================
 // CONFIGURAÇÕES
 // ================================================================
-
+const CHAVE_STORAGE = "biblioteca_dados";
 // Indica se o banco já foi criado.
 let bancoInicializado = false;
 
